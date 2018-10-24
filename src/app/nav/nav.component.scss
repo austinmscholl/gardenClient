@@ -21,10 +21,12 @@ header{
 
     nav{
         justify-self: right;
+        margin-top: auto;
+        margin-bottom:auto;
 
         ul{
             list-style-type:none;
-            margin:20px 0 0 0; padding: 0;
+            margin:0; padding: 0;
 
             li{
                 float:left;
