@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,15 @@ export class AdminService {
 
 
   signIn(email:string, password:string) {
-    return this.http.post('https://efa-gardenapp-backend.herokuapp.com/api/auth/login', {email: email, password: password})
+    return this.http.post<any>('https://efa-gardenapp-backend.herokuapp.com/api/auth/login', {email: email, password: password})
+      .pipe(map(user => {
+
+        if (user) {
+          localStorage.setItem('token', JSON.stringify(user.token));
+        }
+
+        return user;
+      }))
   }
 
 }
