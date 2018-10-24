@@ -7,11 +7,12 @@ import { HttpClient } from '@angular/common/http';
 
 export class ProductsService {
 
-  productsUrl = 'assets/products.json';
+  productsUrl = 'https://efa-gardenapp-backend.herokuapp.com/api/product';
+
+
+  constructor(private http: HttpClient) { }
 
   getProducts() {
     return this.http.get(this.productsUrl);
   }
-
-  constructor(private http: HttpClient) { }
 }
