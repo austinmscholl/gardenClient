@@ -11,7 +11,7 @@ import { ProductsComponent } from './products/products.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
     HomeComponent,
     AboutComponent,
     ProductsComponent
