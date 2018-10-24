@@ -1,0 +1,14 @@
+<form name='form' (ngSubmit)='signIn()' [formGroup]='user'>
+
+  <div class='form-group'>
+    <label>email</label>
+    <input formControlName='email' name='email'>
+  </div>
+  <div class='form-group'>
+    <label>password</label>
+    <input formControlName='password' name='password'>
+  </div>
+  
+  <button>Submit</button>
+
+</form>
