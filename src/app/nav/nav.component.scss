@@ -1,0 +1,40 @@
+.container{
+    width:90%;
+    display: grid;
+    grid-template-columns: 30% auto;
+    padding:1.5em;
+    margin:0 auto;
+}
+
+header{
+    background: #FF7F00;
+
+    .logo{
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+    nav{
+        justify-self: right;
+
+        ul{
+            list-style-type:none;
+            margin:0; padding: 0;
+
+            li{
+                float:left;
+
+                a{
+                    padding:1.5em;
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover{
+                        background: hsl(30, 100%, 60%);
+                    }
+                }
+            }
+        }
+    }
+}
