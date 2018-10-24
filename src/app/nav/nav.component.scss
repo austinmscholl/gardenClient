@@ -2,12 +2,16 @@
     width:90%;
     display: grid;
     grid-template-columns: 30% auto;
-    padding:1.5em;
+    padding:1em;
     margin:0 auto;
 }
 
 header{
     background: #FF7F00;
+
+    img{
+        width:30%;
+    }
 
     .logo{
         font-weight: bold;
@@ -20,7 +24,7 @@ header{
 
         ul{
             list-style-type:none;
-            margin:0; padding: 0;
+            margin:20px 0 0 0; padding: 0;
 
             li{
                 float:left;
