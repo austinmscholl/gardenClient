@@ -1,0 +1,21 @@
+<div *ngIf="products" class="productContainer">
+  <div *ngFor="let product of products" class="product">
+    <div>
+      <p>{{  product.product_name  }}</p>
+      <p>{{  product.product_description }}</p>
+      <p>{{  product.product_price }}</p>
+      <p>{{  product.product_image  }}</p>
+    </div>
+  </div>
+  <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">&raquo;</a>
+  </div>
+</div>
+
