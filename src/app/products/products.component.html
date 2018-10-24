@@ -1,10 +1,10 @@
 <div *ngIf="products" class="productContainer">
   <div *ngFor="let product of products" class="product">
     <div>
-      <p>{{  product.product_name  }}</p>
-      <p>{{  product.product_description }}</p>
-      <p>{{  product.product_price }}</p>
+      <h3>{{  product.product_name  }}</h3>
       <p>{{  product.product_image  }}</p>
+      <p>{{  product.product_description }}</p>
+      <p>Price: ${{  product.product_price }}</p>
     </div>
   </div>
   <div class="pagination">
