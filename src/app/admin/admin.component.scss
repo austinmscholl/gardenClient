@@ -1,0 +1,25 @@
+.formContainer{
+    display:flex;
+    height: 100%;
+}
+
+form{
+    margin:auto;
+    padding: 80px;
+    text-align:center;
+    background:hsla(360, 100%, 100%, .7);
+    border-radius: 10px;
+
+    input{
+        margin:10px;
+        border-radius: 5px;
+        border:none;
+
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+        margin:10px;
+    }
+}
