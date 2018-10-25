@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+.box{
+    margin-top: 10em;
+    margin-left:10em;
+    width: 40em;
+    background: hsla(360, 100%, 100%, .85);
+    padding:3em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 .logo1{
     position: absolute;
-    right: 3%;
-    top:21%
-   
+    right: 5em;
+    top:16em;
+    
+    img{
+        width:90%;
+    }
 }
 
 .bodyContainer{
-    height:100%;
-    background-image: url("../../assets/fencegrassedit.jpg");
+    background-image: url("../../assets/finalfencegrass.jpg");
     background-size: cover;
+    height:100%;
 }
 
 
