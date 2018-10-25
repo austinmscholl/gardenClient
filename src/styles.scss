@@ -9,8 +9,9 @@ $secondary: #FF7F00;
 $font: 'Roboto Condensed', sans-serif;
 
 body, html{
-    height:100%;
+    min-height:100%;
     margin:0 auto;
     background: #00CCFF;
+    position: relative;
 }
 
