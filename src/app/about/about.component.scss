@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 
+.box{
+    margin: 2em 1em;
+    width: 78em;
+    height: 45vh;
+    background: hsla(360, 100%, 100%, .85);
+    padding:2em;
+    padding-bottom: 8em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 p {
     font-family: 'Roboto Condensed', sans-serif;
     padding-left: 2vw;
     padding-right: 3vw;
+    letter-spacing: 2px;
 }
 
 .contactForm {
@@ -12,9 +23,9 @@ p {
     background-color: #FF7F00;
     font-family: 'Roboto Condensed', sans-serif;
     width: 40vw; 
-    // border: 1px solid rgba(255,127,0,0.5);
     border: 2px solid black;
     margin: 0 auto;
+    margin-bottom: 1em;
 }
 
 .button {
@@ -29,6 +40,7 @@ p {
     padding: 15px 32px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-bottom: 1em;
 }
 
 .button:hover {
