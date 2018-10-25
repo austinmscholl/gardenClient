@@ -26,7 +26,7 @@ export class AdminComponent implements OnInit {
   }
 
   setToken(){
-    localStorage.setItem('user', this.newUser)
+    localStorage.setItem('token', this.newUser.token)
   }
 
   signIn(){
