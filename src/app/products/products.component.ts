@@ -31,5 +31,15 @@ export class ProductsComponent implements OnInit {
   }
   delete(id) {
       this.deleteService.deleteProduct(id)
-    }
+  }
+
+  refreshProducts() {
+    setTimeout(() => {
+      this.productsService.getProducts().subscribe(
+        data => {
+          console.log(data)
+          this.products = data
+        }
+    )}, 100)
+  }
 }
