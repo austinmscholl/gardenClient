@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
+import {DeleteService} from '../delete.service';
+
 
 @Component({
   selector: 'app-products',
@@ -8,9 +10,12 @@ import { ProductsService } from '../products.service';
 })
 export class ProductsComponent implements OnInit {
 
+  token = localStorage.getItem('token');
   products: Object;
 
-  constructor(private productsService: ProductsService) { }
+
+
+  constructor(private productsService: ProductsService, private deleteService: DeleteService) { }
 
   ngOnInit() {
     this.productsService.getProducts().subscribe(
@@ -19,6 +24,12 @@ export class ProductsComponent implements OnInit {
         this.products = data
       }
     )
-  }
 
+    
+    
+    
+  }
+  delete(id) {
+      this.deleteService.deleteProduct(id)
+    }
 }
