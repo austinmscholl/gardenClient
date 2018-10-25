@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+.logo1{
+    position: absolute;
+    right: 3%;
+    top:21%
+   
+}
+
+.bodyContainer{
+    height:100%;
+    background-image: url("../../assets/fencegrassedit.jpg");
+    background-size: cover;
+}
+
+
+.container{
+    width:90%;
+    display: grid;
+    grid-template-columns: 50% auto;
+    padding:1em;
+    margin:0 auto;
+}
+
+.p{
+font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+
