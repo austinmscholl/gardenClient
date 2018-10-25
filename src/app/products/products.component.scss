@@ -15,14 +15,28 @@
     box-shadow: 3px 5px rgba(0, 0, 0, 0.4);
     text-align:center;
     background: hsla(360, 100%, 100%, .7);
+    padding: 40px;
+    position:relative;
 
     &:hover{
         box-shadow: 6px 8px rgba(0, 0, 0, 0.4);
     }
+
+    button{
+        background:red;
+        color:white;
+        border-radius: 10px;
+        width:20%;
+        height:30px;
+        position: absolute;
+        bottom:10px;
+        right:40%;
+    }
 }
 
 .pagination {
-    display: inline-block;
+    margin-top: 2vh;
+    margin-left: 40%;
 }
 
 .pagination a {
